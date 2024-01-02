@@ -272,6 +272,9 @@ body {
 
     &:has(.summary__skill--red) {
       background: hsla(var(--light-red), 0.05);
+      &:hover {
+        background: hsla(var(--light-red), 0.25);
+      }
     }
 
     .summary__skill--red {
@@ -280,6 +283,9 @@ body {
 
     &:has(.summary__skill--yellow) {
       background: hsla(var(--orangey), 0.05);
+      &:hover {
+        background: hsla(var(--orangey), 0.25);
+      }
     }
 
     .summary__skill--yellow {
@@ -288,6 +294,9 @@ body {
 
     &:has(.summary__skill--green) {
       background: hsla(var(--green-teal), 0.05);
+      &:hover {
+        background: hsla(var(--green-teal), 0.25);
+      }
     }
 
     .summary__skill--green {
@@ -296,6 +305,9 @@ body {
 
     &:has(.summary__skill--blue) {
       background: hsla(var(--cobalt), 0.05);
+      &:hover {
+        background: hsla(var(--cobalt), 0.25);
+      }
     }
 
     .summary__skill--green {
@@ -311,6 +323,11 @@ body {
     color: var(--white);
     font-family: inherit;
     font-size: inherit;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -340,10 +357,11 @@ footer {
   bottom: 0;
 }
 
-footer img {
-  width: 50px;
+.footer__logo {
+  img {
+    width: 50px;
+  }
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
